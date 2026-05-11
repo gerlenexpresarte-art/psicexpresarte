@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresarte | Gerlen Elivet Aquino Zorrilla</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css?v=2.1">
+
+    <meta name="theme-color" content="#E11D48">
+
+    <meta name="title" content="Expresarte - Gerlen Elivet Aquino Zorrilla">
+    <meta name="description"
+        content="Consejería y apoyo psicológico. Da el primer paso hacia una vida más consciente. Acompañamiento humano e integral.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gerlenelivetaquinoyzorrilla.com">
+    <meta property="og:title" content="Expresarte - Gerlen Elivet Aquino Zorrilla">
+    <meta property="og:description"
+        content="Consejería y apoyo psicológico. Da el primer paso hacia una vida más consciente.">
+    <meta property="og:image" content="./images/hero.jpg">
+
+    <!-- Fonts: Playfair Display (Serif) for headings, Raleway (Sans) for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Expresarte.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="sobre-mi.html" class="nav__links" onclick="window.location.href='sobre-mi.html';">Sobre
+                        mí</a>
+                </li>
+                <li class="nav__items">
+                    <a href="consultas.html" class="nav__links"
+                        onclick="window.location.href='consultas.html';">Consultas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="cursos.html" class="nav__links" onclick="window.location.href='cursos.html';">Cursos</a>
+                </li>
+
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img" alt="Menú">
+            </div>
+        </nav>
+    </header>
+
+    <!-- SPLIT PREMIUM HERO -->
+    <section id="inicio"
+        style="background: #111827; min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px 0; overflow: hidden; position: relative;">
+        <!-- Glowing background accents -->
+        <div
+            style="position: absolute; top: -10%; left: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(225,29,72,0.15) 0%, transparent 70%); border-radius: 50%; pointer-events: none;">
+        </div>
+
+        <div class="container"
+            style="display: flex; flex-wrap: wrap; align-items: center; gap: 80px; position: relative; z-index: 2;">
+
+            <!-- Left: Typography Focus -->
+            <div style="flex: 1 1 500px;">
+                <p
+                    style="text-transform: uppercase; letter-spacing: 5px; font-size: 0.85rem; font-weight: 700; color: #FFB347; margin-bottom: 25px;">
+                    Gerlen Elivet Aquino Zorrilla</p>
+                <h1
+                    style="font-size: clamp(3.5rem, 8vw, 6.5rem); font-family: var(--font-heading); margin-bottom: 30px; line-height: 1.05; color: white;">
+                    El arte de <br><span style="font-style: italic; color: #E11D48;">vivir mejor</span>
+                </h1>
+                <p
+                    style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 45px; color: rgba(255,255,255,0.85); max-width: 550px;">
+                    Consejería psicológica integral y estratégica. Da el primer paso hacia una vida más consciente,
+                    conectada y plena.
+                </p>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="consultas.html"
+                        style="padding: 18px 45px; background: #E11D48; color: white; border: 2px solid #E11D48; font-weight: 700; letter-spacing: 1px; border-radius: 50px; text-transform: uppercase; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 10px 30px rgba(225,29,72,0.3);"
+                        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 40px rgba(225,29,72,0.4)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(225,29,72,0.3)';">Empezar
+                        hoy</a>
+
+                    <a href="sobre-mi.html"
+                        style="padding: 18px 45px; background: transparent; color: white; border: 2px solid rgba(255,255,255,0.3); font-weight: 600; letter-spacing: 1px; border-radius: 50px; text-transform: uppercase; font-size: 0.9rem; transition: all 0.3s;"
+                        onmouseover="this.style.background='white'; this.style.color='#111827'; this.style.borderColor='white';"
+                        onmouseout="this.style.background='transparent'; this.style.color='white'; this.style.borderColor='rgba(255,255,255,0.3)';">Conóceme</a>
+                </div>
+            </div>
+
+            <!-- Right: High Quality Image (Not Stretched) -->
+            <div style="flex: 1 1 400px; position: relative; display: flex; justify-content: center;">
+                <div
+                    style="position: absolute; top: -20px; right: -20px; width: 100%; height: 100%; border: 2px solid rgba(255,255,255,0.1); border-radius: 20px; z-index: 1;">
+                </div>
+                <img src="./images/foto-inicio.jpg" alt="Atmósfera de calma"
+                    style="width: 100%; max-width: 500px; border-radius: 20px; position: relative; z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/5;">
+
+                <!-- Decorative element floating -->
+                <div style="position: absolute; bottom: 40px; left: -40px; background: white; padding: 20px 30px; border-radius: 16px; z-index: 3; box-shadow: 0 20px 40px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 15px; transform: translateY(0); transition: transform 0.3s;"
+                    onmouseover="this.style.transform='translateY(-10px)'"
+                    onmouseout="this.style.transform='translateY(0)'">
+                    <div
+                        style="width: 40px; height: 40px; background: #FCE7F3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #E11D48; font-weight: bold; font-size: 1.2rem;">
+                        ✓</div>
+                    <div>
+                        <span
+                            style="display: block; font-weight: 800; color: #111827; letter-spacing: 1px; font-size: 0.9rem; text-transform: uppercase;">Agenda
+                            Abierta</span>
+                        <span style="display: block; color: var(--color-text-secondary); font-size: 0.8rem;">Sesiones
+                            disponibles</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <!-- SOBRE MÍ IMPACTANTE -->
+        <section id="sobre-mi"
+            style="padding: 120px 0; background: var(--color-bg-sand); position: relative; overflow: hidden;">
+            <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 80px;">
+                <!-- Left: Photo with beautiful frame -->
+                <div style="flex: 1 1 400px; position: relative; margin-top: 20px;">
+                    <div
+                        style="position: absolute; top: 25px; left: -25px; width: 100%; height: 100%; border: 2px solid var(--color-accent); border-radius: 30px; z-index: 1;">
+                    </div>
+                    <img src="./images/foto-sobre-mi.jpg" alt="Gerlen Elivet"
+                        style="width: 100%; max-width: 500px; border-radius: 30px; position: relative; z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 3/4;">
+                </div>
+
+                <!-- Right: Content -->
+                <div style="flex: 1 1 400px;">
+                    <h2
+                        style="font-family: var(--font-heading); font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 30px; color: #111827;">
+                        Hola,<br>soy <span style="color: #E11D48; font-style: italic;">Gerlen</span></h2>
+                    <p
+                        style="font-size: 1.25rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 25px;">
+                        Nací en Hato Mayor del Rey, República Dominicana. Soy <strong>psicóloga clínica, desarrolladora
+                            de software y coach</strong> de empresas.
+                    </p>
+                    <p
+                        style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 45px; opacity: 0.9;">
+                        Acompaño procesos de crecimiento personal y profesional desde una mirada humana, combinando la
+                        empatía clínica con el pensamiento estructurado para crear transformaciones reales.
+                    </p>
+                    <a href="sobre-mi.html"
+                        style="display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: #111827; letter-spacing: 2px; text-transform: uppercase; font-size: 0.95rem; padding-bottom: 8px; border-bottom: 2px solid #E11D48; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='translateX(8px)'"
+                        onmouseout="this.style.transform='none'">Descubrir mi historia <span
+                            style="font-size: 1.5rem; color: #E11D48;">&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CITA IDENTIDAD -->
+        <section
+            style="padding: 100px 0; background: white; text-align: center; border-top: 1px solid rgba(0,0,0,0.05);">
+            <div class="container" style="max-width: 800px;">
+                <div
+                    style="font-size: 5rem; color: rgba(225,29,72,0.2); font-family: var(--font-heading); line-height: 0.5; margin-bottom: 20px; text-align: center;">
+                    &ldquo;</div>
+                <h2
+                    style="font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem); color: #111827; line-height: 1.3; margin-bottom: 20px; font-weight: 400; font-style: italic;">
+                    No se trata de cambiar quién eres, sino de descubrir la versión de ti que <span
+                        style="color: #E11D48; font-weight: 600;">siempre ha estado ahí</span>, esperando brillar.
+                </h2>
+                <p
+                    style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); margin-top: 30px;">
+                    Gerlen Elivet — Expresarte</p>
+            </div>
+        </section>
+
+
+        <!-- NUESTROS SERVICIOS BENTO -->
+        <section id="servicios" style="padding: 120px 0; background: white;">
+            <div class="container">
+                <div
+                    style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; gap: 30px;">
+                    <div>
+                        <p
+                            style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 700; color: #E11D48; margin-bottom: 15px;">
+                            CÓMO PUEDO AYUDARTE</p>
+                        <h2
+                            style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-family: var(--font-heading); color: #111827; line-height: 1.1; max-width: 500px;">
+                            Servicios Especializados</h2>
+                    </div>
+                    <p
+                        style="color: var(--color-text-secondary); font-size: 1.1rem; max-width: 450px; line-height: 1.7;">
+                        Acompañamiento estructurado tanto para el desarrollo individual como para la evolución directiva
+                        de tu empresa.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+                    <!-- Servicio Individual -->
+                    <a href="consulta-individual.html"
+                        style="display: block; background: var(--color-bg-sand); border-radius: 30px; padding: 60px 40px; text-decoration: none; color: inherit; transition: all 0.4s; position: relative; overflow: hidden;"
+                        onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 30px 60px rgba(0,0,0,0.05)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                        <div
+                            style="position: absolute; top: 0; right: 0; width: 150px; height: 150px; background: radial-gradient(circle, rgba(225,29,72,0.08) 0%, transparent 70%); border-radius: 50%;">
+                        </div>
+                        <span
+                            style="background: white; color: #E11D48; padding: 8px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">Para
+                            personas</span>
+
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 2.5rem; color: #111827; margin-bottom: 20px;">
+                            Terapia <br><span style="font-style: italic;">Individual</span></h3>
+                        <p
+                            style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px;">
+                            Un espacio de sanación emocional y autoconocimiento para recuperar tu centro y salir del
+                            estancamiento.</p>
+
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: #E11D48; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                            Explorar servicio <span style="font-size: 1.5rem;">&rarr;</span></div>
+                    </a>
+
+                    <!-- Servicio Empresarial -->
+                    <a href="consulta-empresarial.html"
+                        style="display: block; background: #111827; border-radius: 30px; padding: 60px 40px; text-decoration: none; color: white; transition: all 0.4s; position: relative; overflow: hidden;"
+                        onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 30px 60px rgba(17,24,39,0.2)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                        <div
+                            style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: radial-gradient(circle, rgba(14,165,233,0.15) 0%, transparent 70%); border-radius: 50%;">
+                        </div>
+                        <span
+                            style="background: rgba(255,255,255,0.1); color: #7DD3FC; padding: 8px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 30px;">Para
+                            empresas</span>
+
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 2.5rem; color: white; margin-bottom: 20px;">
+                            Servicios <br><span style="font-style: italic; color: #7DD3FC;">Corporativos</span></h3>
+                        <p
+                            style="color: rgba(255,255,255,0.7); font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px;">
+                            Potenciamos el talento directivo a través del liderazgo humano, comunicación consciente y
+                            bienestar estructurado.</p>
+
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: #7DD3FC; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                            Explorar servicio <span style="font-size: 1.5rem;">&rarr;</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓMO TRABAJAMOS VIP -->
+        <section id="metodologia"
+            style="padding: 120px 0; background: var(--color-bg-sand); position: relative; border-top: 1px solid rgba(0,0,0,0.05);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 80px;">
+                    <h2
+                        style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-family: var(--font-heading); color: #111827; margin-bottom: 20px;">
+                        El camino hacia tu bienestar</h2>
+                    <p
+                        style="color: var(--color-text-secondary); font-size: 1.15rem; max-width: 650px; margin: 0 auto; line-height: 1.7;">
+                        No creo en soluciones de molde. Mi método combina la empatía profunda con herramientas
+                        estructurales reales para construir cambios duraderos.</p>
+                </div>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; position: relative;">
+                    <!-- Linea conectora oculta en movil pero visible en escritorio -->
+                    <div style="position: absolute; top: 40px; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, rgba(225,29,72,0.2) 50%, transparent 100%); z-index: 1;"
+                        class="hide-on-mobile"></div>
+
+                    <div
+                        style="background: white; border-radius: 20px; padding: 50px 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.03); position: relative; z-index: 2; text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: white; border: 2px solid #E11D48; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-family: var(--font-heading); font-style: italic; color: #E11D48; margin: 0 auto 30px auto; box-shadow: 0 10px 20px rgba(225,29,72,0.1);">
+                            01</div>
+                        <h3 style="font-size: 1.5rem; color: #111827; margin-bottom: 15px; font-weight: 700;">Sin
+                            Juicios</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Ofrezco un espacio confidencial
+                            donde tu historia importa. Aquí tienes total libertad para ser tú mismo.</p>
+                    </div>
+
+                    <div
+                        style="background: white; border-radius: 20px; padding: 50px 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.03); position: relative; z-index: 2; text-align: center; transform: translateY(20px);">
+                        <div
+                            style="width: 80px; height: 80px; background: #E11D48; border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-family: var(--font-heading); font-style: italic; color: white; margin: 0 auto 30px auto; box-shadow: 0 10px 20px rgba(225,29,72,0.3);">
+                            02</div>
+                        <h3 style="font-size: 1.5rem; color: #111827; margin-bottom: 15px; font-weight: 700;">Estrategia
+                        </h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Analizamos tus entornos y
+                            patrones para descubrir la raíz real de lo que te está frenando actualmente.</p>
+                    </div>
+
+                    <div
+                        style="background: white; border-radius: 20px; padding: 50px 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.03); position: relative; z-index: 2; text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: white; border: 2px solid #E11D48; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-family: var(--font-heading); font-style: italic; color: #E11D48; margin: 0 auto 30px auto; box-shadow: 0 10px 20px rgba(225,29,72,0.1);">
+                            03</div>
+                        <h3 style="font-size: 1.5rem; color: #111827; margin-bottom: 15px; font-weight: 700;">Acción
+                        </h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Aplicamos técnicas prácticas
+                            para que salgas con estrategias y planes reales que mejoren drásticamente tu día a día.</p>
+                    </div>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    .hide-on-mobile {
+                        display: none !important;
+                    }
+                }
+            </style>
+        </section>
+
+
+        <!-- PREGUNTAS FRECUENTES SLEEK -->
+        <section class="faq" style="padding: 120px 0; background: white;">
+            <div class="container" style="max-width: 800px;">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <h2
+                        style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-family: var(--font-heading); color: #111827;">
+                        Preguntas Frecuentes</h2>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <details
+                        style="background: var(--color-bg-sand); border-radius: 16px; padding: 25px 30px; cursor: pointer; transition: all 0.3s; border: 1px solid rgba(0,0,0,0.05);"
+                        open>
+                        <summary
+                            style="font-weight: 700; color: #111827; font-size: 1.15rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            ¿Cómo agendo una cita?
+                            <span style="color: #E11D48; font-size: 1.5rem; font-weight: 300;">+</span>
+                        </summary>
+                        <div
+                            style="padding-top: 20px; color: var(--color-text-secondary); line-height: 1.6; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 15px;">
+                            Puedes agendar tu cita directamente eligiendo un paquete en nuestras páginas de servicios o
+                            contactándote por WhatsApp para coordinar el horario que mejor se adapte a ti.
+                        </div>
+                    </details>
+
+                    <details
+                        style="background: var(--color-bg-sand); border-radius: 16px; padding: 25px 30px; cursor: pointer; transition: all 0.3s; border: 1px solid rgba(0,0,0,0.05);">
+                        <summary
+                            style="font-weight: 700; color: #111827; font-size: 1.15rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            ¿Las sesiones son presenciales o virtuales?
+                            <span style="color: #E11D48; font-size: 1.5rem; font-weight: 300;">+</span>
+                        </summary>
+                        <div
+                            style="padding-top: 20px; color: var(--color-text-secondary); line-height: 1.6; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 15px;">
+                            Actualmente ofrecemos una modalidad virtual altamente efectiva, lo que te permite conectarte
+                            desde la seguridad de tu hogar o tu oficina sin perder la cercanía y el profesionalismo en
+                            ningún momento.
+                        </div>
+                    </details>
+
+                    <details
+                        style="background: var(--color-bg-sand); border-radius: 16px; padding: 25px 30px; cursor: pointer; transition: all 0.3s; border: 1px solid rgba(0,0,0,0.05);">
+                        <summary
+                            style="font-weight: 700; color: #111827; font-size: 1.15rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            ¿Aceptan seguros médicos?
+                            <span style="color: #E11D48; font-size: 1.5rem; font-weight: 300;">+</span>
+                        </summary>
+                        <div
+                            style="padding-top: 20px; color: var(--color-text-secondary); line-height: 1.6; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 15px;">
+                            Por el momento trabajamos con la modalidad de pago directo. Creemos firmemente en brindar
+                            una atención premium, hiper-personalizada y flexible, libre de las restricciones que limitan
+                            tu proceso clínico.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <style>
+                details summary::-webkit-details-marker {
+                    display: none;
+                }
+
+                details[open] summary span {
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    transition: transform 0.3s;
+                }
+            </style>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <h3 class="footer__logo">Expresarte.</h3>
+                <p>El arte de vivir.</p>
+            </div>
+            <div class="footer__nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer__copy">
+                <p>&copy; 2026 Gerlen Elivet Aquino Zorrilla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
