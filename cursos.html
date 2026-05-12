@@ -19,14 +19,11 @@
 
 <body>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {mostrarExito();}"></iframe>
-
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
                 <h2 class="nav__title">Expresarte.</h2>
             </div>
-
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
                 <li class="nav__items"><a href="sobre-mi.html" class="nav__links">Sobre mí</a></li>
@@ -35,7 +32,6 @@
                 <li class="nav__items"><a href="contacto.html" class="nav__links">Contacto</a></li>
                 <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
             </ul>
-
             <div class="nav__menu">
                 <img src="./images/menu.svg" class="nav__img" alt="Menú">
             </div>
@@ -43,58 +39,56 @@
     </header>
 
     <main>
-        <section style="padding: 150px 0 80px 0; background: var(--color-bg-sand); text-align: center; position: relative;">
-            <div class="container" style="max-width: 800px; position: relative; z-index: 2;">
+        <section style="padding: 150px 0 80px 0; background: var(--color-bg-sand); text-align: center;">
+            <div class="container" style="max-width: 800px;">
                 <span style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 800; color: #E11D48; display: inline-block; margin-bottom: 20px;">Curso Online Exclusivo</span>
                 <h1 style="font-size: clamp(3.5rem, 8vw, 6rem); font-family: var(--font-heading); color: #111827; line-height: 1; margin-bottom: 30px;">
-                    Exprésate:<br><span style="font-style: italic; color: var(--color-text-secondary); font-weight: 400;">el arte de sanar</span>
+                    Exprésate:<br><span style="font-style: italic; color: var(--color-text-secondary);">el arte de sanar</span>
                 </h1>
-                <p style="font-size: 1.25rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 650px; margin-left: auto; margin-right: auto;">
-                    Te invitamos a darle voz a lo que sientes. Transforma el silencio y la carga emocional en conciencia, sanidad y absoluta libertad interior.
-                </p>
-                <a href="#lista-espera" style="display: inline-block; padding: 20px 50px; background: #111827; color: white; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; border-radius: 50px; font-size: 0.95rem;">
-                    Inscribirme a la lista VIP
-                </a>
+                <a href="#lista-espera" style="display: inline-block; padding: 20px 50px; background: #111827; color: white; font-weight: 800; text-transform: uppercase; border-radius: 50px; text-decoration: none;">Inscribirme a la lista VIP</a>
             </div>
         </section>
 
-        <section id="lista-espera" style="padding: 120px 0; background: #111827; color: white; position: relative; overflow: hidden;">
-            <div class="container" style="max-width: 1200px; position: relative; z-index: 2;">
+        <section id="lista-espera" style="padding: 120px 0; background: #111827; color: white;">
+            <div class="container" style="max-width: 1200px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; justify-content: center;">
-
-                    <div style="flex: 1 1 400px; text-align: center;">
-                        <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 20px;">Únete al círculo <span style="font-style: italic; color: #FDA4AF;">exclusivo</span></h2>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 1.2rem;">Déjanos tus datos para recibir prioridad.</p>
+                    
+                    <div style="flex: 1 1 500px;">
+                        <h2 style="font-family: var(--font-heading); font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 25px;">
+                            Únete al círculo <br><span style="font-style: italic; color: #FDA4AF;">exclusivo</span>
+                        </h2>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 1.2rem;">Recibe prioridad cuando se habiliten los cupos oficiales.</p>
                     </div>
 
                     <div style="flex: 1 1 450px;">
-                        <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 30px; backdrop-filter: blur(10px);">
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 50px 40px; border-radius: 40px; backdrop-filter: blur(20px);">
                             
-                            <form action="https://formsubmit.co/gerlenexpresarte@gmail.com" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                                <input type="hidden" name="_subject" value="Nueva Inscripción VIP">
-                                <input type="hidden" name="_captcha" value="false">
-
-                                <div style="margin-bottom: 20px;">
-                                    <label style="display: block; color: rgba(255,255,255,0.5); margin-bottom: 10px;">Nombre</label>
-                                    <input type="text" name="Nombre" required style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white;">
-                                </div>
+                            <form id="formVip" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="e6681ee1-57eb-4fc8-a442-3f6c94821149">
+                                <input type="hidden" name="subject" value="Nueva Inscripción VIP Expresarte">
+                                <input type="checkbox" name="botcheck" style="display: none;">
 
                                 <div style="margin-bottom: 25px;">
-                                    <label style="display: block; color: rgba(255,255,255,0.5); margin-bottom: 10px;">Correo</label>
-                                    <input type="email" name="Email" required style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white;">
+                                    <label style="display: block; font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px;">Nombre Completo</label>
+                                    <input type="text" name="name" placeholder="Tu nombre" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none;">
                                 </div>
 
-                                <button type="submit" id="btnEnviar" style="width: 100%; padding: 20px; background: white; color: #111827; border: none; border-radius: 10px; font-weight: 800; cursor: pointer;">
-                                    ANOTARME A LA LISTA
+                                <div style="margin-bottom: 30px;">
+                                    <label style="display: block; font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px;">Correo Electrónico</label>
+                                    <input type="email" name="email" placeholder="tu@correo.com" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none;">
+                                </div>
+
+                                <button type="submit" id="btnEnviar" style="width: 100%; padding: 22px; background: white; color: #111827; border: none; border-radius: 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; cursor: pointer; transition: 0.3s;">
+                                    Anotarme a la lista
                                 </button>
 
                                 <div id="mensajeExito" style="display:none; text-align:center; margin-top: 20px; color: #FDA4AF; font-weight: bold;">
-                                    ¡Registro exitoso! Pronto recibirás noticias nuestras.
+                                    ¡Registro exitoso! Tus datos han sido guardados.
                                 </div>
                             </form>
+
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -106,19 +100,41 @@
 
     <script src="./js/menu.js"></script>
 
-    <script type="text/javascript">
-        var submitted = false;
+    <script>
+        const form = document.getElementById('formVip');
+        const btn = document.getElementById('btnEnviar');
+        const result = document.getElementById('mensajeExito');
 
-        function mostrarExito() {
-            if(submitted) {
-                document.getElementById('btnEnviar').style.display = 'none';
-                document.getElementById('mensajeExito').style.display = 'block';
-                // Opcional: una alerta para asegurar que el usuario vea que funcionó
-                alert("¡Gracias! Tu inscripción se ha enviado correctamente.");
-            }
-        }
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            btn.innerText = "Enviando...";
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: json
+                })
+                .then(async (response) => {
+                    if (response.status == 200) {
+                        btn.style.display = "none";
+                        result.style.display = "block";
+                    } else {
+                        alert("Algo salió mal. Inténtalo de nuevo.");
+                        btn.disabled = false;
+                        btn.innerText = "Anotarme a la lista";
+                    }
+                })
+                .catch(error => {
+                    alert("Error de conexión.");
+                    btn.disabled = false;
+                    btn.innerText = "Anotarme a la lista";
+                });
+        });
     </script>
-
 </body>
 </html>
-
