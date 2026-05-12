@@ -16,7 +16,7 @@
     <meta name="description"
         content="Escríbeme para agendar consultas, talleres corporativos o tener más información sobre mis servicios.">
 
-    <!-- Fonts: Playfair Display (Serif) for headings, Raleway (Sans) for body -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,23 +34,12 @@
             </div>
 
             <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="sobre-mi.html" class="nav__links">Sobre mí</a>
-                </li>
-                <li class="nav__items">
-                    <a href="consultas.html" class="nav__links">Consultas</a>
-                </li>
-                <li class="nav__items">
-                    <a href="cursos.html" class="nav__links">Cursos</a>
-                </li>
-
-                <li class="nav__items">
-                    <a href="contacto.html" class="nav__links" style="color: var(--color-accent);">Contacto</a>
-                </li>
-
+                <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="sobre-mi.html" class="nav__links">Sobre mí</a></li>
+                <li class="nav__items"><a href="consultas.html" class="nav__links">Consultas</a></li>
+                <li class="nav__items"><a href="cursos.html" class="nav__links">Cursos</a></li>
+                <li class="nav__items"><a href="contacto.html" class="nav__links"
+                        style="color: var(--color-accent);">Contacto</a></li>
                 <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
             </ul>
 
@@ -61,10 +50,8 @@
     </header>
 
     <main style="flex: 1;">
-        <!-- CONTACT & FAQ SECTION -->
         <section id="contacto" style="padding: 150px 0 100px 0; position: relative; overflow: hidden;">
             <div class="container" style="position: relative; z-index: 2;">
-                <!-- Header -->
                 <div style="text-align: center; margin-bottom: 80px;">
                     <span
                         style="color: #E11D48; font-family: var(--font-body); text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 800; display: inline-block; margin-bottom: 20px;">Conversemos</span>
@@ -77,79 +64,71 @@
                     </p>
                 </div>
 
-                <!-- Grid Layout (Bento) -->
                 <div
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
 
-                    <!-- Left: Contact Form -->
-                    <div
+                    <!-- Contenedor del Formulario -->
+                    <div id="contenedorForm"
                         style="background: white; border-radius: 30px; padding: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.03);">
-                        <h3
+                        <h3 id="tituloForm"
                             style="font-family: var(--font-heading); font-size: 1.8rem; color: #111827; margin-bottom: 30px;">
                             Envía un mensaje</h3>
-                        <!-- FormSubmit Setup -->
-                        <form action="https://formsubmit.co/gerlenexpresarte@gmail.com" method="POST"
-                            style="display: flex; flex-direction: column; gap: 20px;">
-                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde Expresarte Web">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="box">
-                            <input type="text" name="_autoresponder" style="display:none">
 
-                            <!-- Fields -->
-                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <form id="formContacto" action="https://api.web3forms.com/submit" method="POST"
+                            style="display: flex; flex-direction: column; gap: 20px;">
+                            <input type="hidden" name="access_key" value="e6681ee1-57eb-4fc8-a442-3f6c94821149">
+                            <input type="hidden" name="subject" value="Nuevo Mensaje desde Expresarte Web">
+                            <input type="checkbox" name="botcheck" style="display: none;">
+
+                            <div class="campo-form" style="display: flex; flex-direction: column; gap: 8px;">
                                 <label
                                     style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Nombre
                                     Completo</label>
                                 <input type="text" name="name" required
-                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; outline: none; transition: all 0.3s;"
-                                    onfocus="this.style.borderColor='#E11D48'; this.style.boxShadow='0 0 0 4px rgba(225,29,72,0.1)'"
-                                    onblur="this.style.borderColor='rgba(0,0,0,0.1)'; this.style.boxShadow='none'"
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
                                     placeholder="Ej. Camila Méndez">
                             </div>
 
-                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div class="campo-form" style="display: flex; flex-direction: column; gap: 8px;">
                                 <label
                                     style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Correo
                                     Electrónico</label>
                                 <input type="email" name="email" required
-                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; outline: none; transition: all 0.3s;"
-                                    onfocus="this.style.borderColor='#E11D48'; this.style.boxShadow='0 0 0 4px rgba(225,29,72,0.1)'"
-                                    onblur="this.style.borderColor='rgba(0,0,0,0.1)'; this.style.boxShadow='none'"
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
                                     placeholder="tucorreo@ejemplo.com">
                             </div>
 
-                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div class="campo-form" style="display: flex; flex-direction: column; gap: 8px;">
                                 <label
-                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Motivo
-                                    (Terapia, Charlas, etc)</label>
+                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Motivo</label>
                                 <input type="text" name="motivo" required
-                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; outline: none; transition: all 0.3s;"
-                                    onfocus="this.style.borderColor='#E11D48'; this.style.boxShadow='0 0 0 4px rgba(225,29,72,0.1)'"
-                                    onblur="this.style.borderColor='rgba(0,0,0,0.1)'; this.style.boxShadow='none'"
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
                                     placeholder="¿En qué puedo ayudarte?">
                             </div>
 
-                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div class="campo-form" style="display: flex; flex-direction: column; gap: 8px;">
                                 <label
                                     style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Tu
                                     Mensaje</label>
                                 <textarea name="message" rows="5" required
-                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; outline: none; transition: all 0.3s; resize: none;"
-                                    onfocus="this.style.borderColor='#E11D48'; this.style.boxShadow='0 0 0 4px rgba(225,29,72,0.1)'"
-                                    onblur="this.style.borderColor='rgba(0,0,0,0.1)'; this.style.boxShadow='none'"
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none; resize: none;"
                                     placeholder="Escribe tu consulta aquí..."></textarea>
                             </div>
 
-                            <button type="submit"
-                                style="background-color: #111827; color: white; padding: 18px 40px; border-radius: 50px; font-family: var(--font-body); font-weight: 700; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.95rem; margin-top: 10px; transition: all 0.3s; box-shadow: 0 10px 20px rgba(17,24,39,0.15);"
-                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(17,24,39,0.25)';"
-                                onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 20px rgba(17,24,39,0.15)';">
+                            <button type="submit" id="btnEnviar"
+                                style="background-color: #111827; color: white; padding: 18px 40px; border-radius: 50px; font-weight: 700; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1.5px; transition: all 0.3s;">
                                 Enviar Mensaje &rarr;
                             </button>
                         </form>
+
+                        <div id="mensajeExito"
+                            style="display:none; text-align:center; padding: 40px 20px; color: #E11D48; font-weight: bold; border: 1px solid #E11D48; border-radius: 12px; font-family: var(--font-body);">
+                            <span style="font-size: 2rem; display: block; margin-bottom: 10px;"></span>
+                            ¡Gracias! Tu mensaje ha sido enviado con éxito.<br>Te responderé lo antes posible.
+                        </div>
                     </div>
 
-                    <!-- Right: FAQ Layout -->
+                    <!-- FAQ y WhatsApp -->
                     <div style="background: transparent;">
                         <div class="faq__wrapper" style="display: flex; flex-direction: column; gap: 20px;">
 
@@ -191,24 +170,6 @@
                                 </div>
                             </div>
 
-                            <div class="faq__item"
-                                style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
-                                <div class="faq__question"
-                                    style="padding: 25px 30px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                                    <h3
-                                        style="font-size: 1.15rem; font-family: var(--font-heading); color: #111827; margin: 0;">
-                                        ¿Cómo puedo realizar el pago internacional?</h3>
-                                    <span class="faq__icon"
-                                        style="font-size: 1.5rem; color: #E11D48; font-weight: 300;">+</span>
-                                </div>
-                                <div class="faq__answer">
-                                    <p
-                                        style="padding: 0 30px 25px 30px; margin: 0; color: var(--color-text-secondary); line-height: 1.6; font-size: 0.95rem;">
-                                        Contamos con múltiples plataformas amigables como PayPal para depósitos
-                                        internacionales sin comisión por tu parte, logrando flexibilizar tu integración
-                                        clínica.</p>
-                                </div>
-                            </div>
 
                             <div class="faq__item"
                                 style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
@@ -230,29 +191,26 @@
                                 </div>
                             </div>
 
-                            <!-- Banner CTA -->
+
+
+
                             <div
-                                style="margin-top: 10px; padding: 30px; background: #111827; border-radius: 20px; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                                style="margin-top: 10px; padding: 30px; background: #111827; border-radius: 20px; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
                                 <div>
                                     <p
-                                        style="font-size: 0.75rem; font-family: var(--font-body); text-transform: uppercase; letter-spacing: 2px; color: #E11D48; font-weight: 800; margin-bottom: 5px;">
-                                        MÁS DIRECTO</p>
+                                        style="font-size: 0.75rem; color: #E11D48; font-weight: 800; margin-bottom: 5px; text-transform: uppercase;">
+                                        Más Directo</p>
                                     <p style="margin: 0; font-family: var(--font-heading); font-size: 1.4rem;">¿Tienes
                                         una urgencia?</p>
                                 </div>
                                 <a href="https://wa.me/18293424131?text=Hola,%20me%20gustaría%20agendar" target="_blank"
-                                    style="background: #E11D48; color: white; border-radius: 50%; min-width: 55px; height: 55px; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 1.5rem; box-shadow: 0 10px 20px rgba(225,29,72,0.3); transition: transform 0.3s;"
-                                    onmouseover="this.style.transform='scale(1.1)'"
-                                    onmouseout="this.style.transform='scale(1)'">
-                                    &rarr;
-                                </a>
+                                    style="background: #E11D48; color: white; border-radius: 50%; min-width: 55px; height: 55px; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 1.5rem;">&rarr;</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -261,19 +219,54 @@
                 <h3 class="footer__logo">Expresarte.</h3>
                 <p>El arte de vivir.</p>
             </div>
-            <div class="footer__nav">
-                <a href="index.html">Inicio</a>
-                <a href="index.html#servicios">Servicios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
             <div class="footer__copy">
                 <p>&copy; 2026 Gerlen Elivet Aquino Zorrilla. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Script -->
     <script src="./js/menu.js"></script>
+    <script>
+        const form = document.getElementById('formContacto');
+        const btn = document.getElementById('btnEnviar');
+        const successMsg = document.getElementById('mensajeExito');
+        const tituloForm = document.getElementById('tituloForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            btn.innerText = "Enviando...";
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: json
+            })
+                .then(async (response) => {
+                    if (response.status == 200) {
+                        // Acción: Ocultar título y formulario original
+                        tituloForm.style.display = 'none';
+                        form.style.display = 'none';
+                        // Mostrar mensaje de éxito
+                        successMsg.style.display = 'block';
+                    } else {
+                        alert("Algo salió mal. Inténtalo de nuevo.");
+                        btn.innerText = "Enviar Mensaje →";
+                        btn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    alert("Error de conexión.");
+                    btn.innerText = "Enviar Mensaje →";
+                    btn.disabled = false;
+                });
+        });
+    </script>
 </body>
 
 </html>
+                    
