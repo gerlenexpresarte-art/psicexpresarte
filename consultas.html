@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultas | Gerlen Elivet Aquino Zorrilla</title>
+    <title>Contacto | Expresarte</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css?v=2.1">
 
     <meta name="theme-color" content="#E11D48">
 
-    <!-- Fonts -->
+    <meta name="title" content="Contacto - Expresarte Web">
+    <meta name="description"
+        content="Escríbeme para agendar consultas, talleres corporativos o tener más información sobre mis servicios.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,31 +23,22 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body style="background: var(--color-bg-sand); display: flex; flex-direction: column; min-height: 100vh;">
 
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <h2 class="nav__title">Expresarte.</h2>
+                <h2 class="nav__title" onclick="window.location.href='index.html';" style="cursor: pointer;">Expresarte.
+                </h2>
             </div>
 
             <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="sobre-mi.html" class="nav__links">Sobre mí</a>
-                </li>
-                <li class="nav__items">
-                    <a href="consultas.html" class="nav__links" style="color: var(--color-accent);">Consultas</a>
-                </li>
-                <li class="nav__items">
-                    <a href="cursos.html" class="nav__links">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="contacto.html" class="nav__links">Contacto</a>
-                </li>
-
+                <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="sobre-mi.html" class="nav__links">Sobre mí</a></li>
+                <li class="nav__items"><a href="consultas.html" class="nav__links">Consultas</a></li>
+                <li class="nav__items"><a href="cursos.html" class="nav__links">Cursos</a></li>
+                <li class="nav__items"><a href="contacto.html" class="nav__links"
+                        style="color: var(--color-accent);">Contacto</a></li>
                 <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
             </ul>
 
@@ -54,67 +48,115 @@
         </nav>
     </header>
 
-    <main>
-        <section class="section-spacing bg-white">
-            <div class="container">
-                <div class="center-text mb-large">
-                    <h1 class="title">¿Qué tipo de consulta necesitas?</h1>
-                    <p class="paragraph">Elige el espacio que mejor se adapta a tu momento actual.</p>
+    <main style="flex: 1;">
+        <section id="contacto" style="padding: 150px 0 100px 0; position: relative; overflow: hidden;">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div style="text-align: center; margin-bottom: 80px;">
+                    <span
+                        style="color: #E11D48; font-family: var(--font-body); text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 800; display: inline-block; margin-bottom: 20px;">Conversemos</span>
+                    <h1
+                        style="font-size: clamp(3rem, 6vw, 4.5rem); font-family: var(--font-heading); color: #111827; line-height: 1.1; margin-bottom: 20px;">
+                        Contacto & Dudas Frecuentes</h1>
+                    <p
+                        style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">
+                        Si tienes preguntas adicionales o deseas cotizar un taller in-company, escríbeme directamente.
+                    </p>
                 </div>
 
-                <!-- DYNAMIC SPLIT SCREEN LAYOUT -->
                 <div
-                    style="display: flex; flex-wrap: wrap; min-height: 600px; border-radius: 30px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.15); margin: 60px 0; position: relative;">
-                    <!-- LEFT: Personal -->
-                    <div style="flex: 1 1 400px; background: linear-gradient(135deg, #E11D48, #8E0E22); position: relative; padding: 80px 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; transition: flex 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);"
-                        onmouseover="if(window.innerWidth > 800) { this.style.flex='1.3 1 400px'; this.nextElementSibling.style.flex='0.7 1 400px'; }"
-                        onmouseout="if(window.innerWidth > 800) { this.style.flex='1 1 400px'; this.nextElementSibling.style.flex='1 1 400px'; }">
-                        <div style="position: relative; z-index: 2;">
-                            <p
-                                style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 700; color: #FFB347; margin-bottom: 20px;">
-                                Acompañamiento individual</p>
-                            <h2
-                                style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: 25px; line-height: 1.1; color: white;">
-                                Consulta<br>Personal</h2>
-                            <p
-                                style="font-size: 1.1rem; opacity: 0.9; max-width: 400px; margin: 0 auto 40px auto; line-height: 1.6;">
-                                Proceso psicológico profundo para sanar heridas, desbloquear patrones y reconectar con
-                                tu esencia.</p>
-                            <a href="consulta-individual.html"
-                                style="display: inline-block; padding: 18px 45px; background: white; color: #E11D48; font-weight: 700; letter-spacing: 1px; border-radius: 50px; text-transform: uppercase; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
-                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)';"
-                                onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.1)';">Descubrir
-                                más</a>
-                        </div>
-                    </div>
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
 
-                    <!-- RIGHT: Empresas -->
-                    <div style="flex: 1 1 400px; background: #111827; position: relative; padding: 80px 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; transition: flex 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);"
-                        onmouseover="if(window.innerWidth > 800) { this.style.flex='1.3 1 400px'; this.previousElementSibling.style.flex='0.7 1 400px'; }"
-                        onmouseout="if(window.innerWidth > 800) { this.style.flex='1 1 400px'; this.previousElementSibling.style.flex='1 1 400px'; }">
-                        <div style="position: relative; z-index: 2;">
-                            <p
-                                style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 700; color: #2DD4BF; margin-bottom: 20px;">
-                                Cultura y Liderazgo</p>
-                            <h2
-                                style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: 25px; line-height: 1.1; color: white;">
-                                Consulta<br>Empresarial</h2>
-                            <p
-                                style="font-size: 1.1rem; opacity: 0.8; max-width: 400px; margin: 0 auto 40px auto; line-height: 1.6;">
-                                Consultoría emocional corporativa para potenciar equipos, líderes y dinámicas
-                                organizacionales.</p>
-                            <a href="consulta-empresarial.html"
-                                style="display: inline-block; padding: 18px 45px; background: white; color: #111827; font-weight: 700; letter-spacing: 1px; border-radius: 50px; text-transform: uppercase; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
-                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.2)';"
-                                onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.1)';">Transformar
-                                mi equipo</a>
-                        </div>
-                    </div>
-
-                    <!-- GLOBAL BACKGROUND TEXT -->
                     <div
-                        style="position: absolute; font-family: var(--font-heading); font-size: 12vw; color: rgba(255,255,255,0.06); font-weight: 900; pointer-events: none; white-space: nowrap; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; mix-blend-mode: overlay;">
-                        EXPRESARTE</div>
+                        style="background: white; border-radius: 30px; padding: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.03);">
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 1.8rem; color: #111827; margin-bottom: 30px;">
+                            Envía un mensaje</h3>
+
+                        <form id="formContacto" action="https://api.web3forms.com/submit" method="POST"
+                            style="display: flex; flex-direction: column; gap: 20px;">
+                            <input type="hidden" name="access_key" value="e6681ee1-57eb-4fc8-a442-3f6c94821149">
+                            <input type="hidden" name="subject" value="Nuevo Mensaje desde Web Expresarte">
+                            <input type="checkbox" name="botcheck" style="display: none;">
+
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label
+                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Nombre
+                                    Completo</label>
+                                <input type="text" name="name" required
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
+                                    placeholder="Ej. Camila Méndez">
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label
+                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Correo
+                                    Electrónico</label>
+                                <input type="email" name="email" required
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
+                                    placeholder="tucorreo@ejemplo.com">
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label
+                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Motivo</label>
+                                <input type="text" name="motivo" required
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none;"
+                                    placeholder="¿En qué puedo ayudarte?">
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label
+                                    style="font-size: 0.85rem; font-weight: 700; color: #111827; text-transform: uppercase; letter-spacing: 1px;">Tu
+                                    Mensaje</label>
+                                <textarea name="message" rows="5" required
+                                    style="padding: 15px 20px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-size: 1rem; outline: none; resize: none;"
+                                    placeholder="Escribe tu consulta aquí..."></textarea>
+                            </div>
+
+                            <button type="submit" id="btnEnviar"
+                                style="background-color: #111827; color: white; padding: 18px 40px; border-radius: 50px; font-weight: 700; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1.5px; transition: all 0.3s;">
+                                Enviar Mensaje &rarr;
+                            </button>
+
+                            <div id="mensajeExito"
+                                style="display:none; text-align:center; padding: 20px; color: #E11D48; font-weight: bold; border: 1px solid #E11D48; border-radius: 12px;">
+                                ¡Gracias! Tu mensaje ha sido enviado con éxito.
+                            </div>
+                        </form>
+                    </div>
+
+                    <div style="background: transparent;">
+                        <div class="faq__wrapper" style="display: flex; flex-direction: column; gap: 20px;">
+                            <div class="faq__item"
+                                style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+                                <div class="faq__question"
+                                    style="padding: 25px 30px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <h3
+                                        style="font-size: 1.15rem; font-family: var(--font-heading); color: #111827; margin: 0;">
+                                        ¿Atiendes de forma presencial o virtual?</h3>
+                                    <span class="faq__icon" style="font-size: 1.5rem; color: #E11D48;">+</span>
+                                </div>
+                                <div class="faq__answer">
+                                    <p
+                                        style="padding: 0 30px 25px 30px; margin: 0; color: var(--color-text-secondary); line-height: 1.6;">
+                                        Actualmente todas las sesiones son 100% online.</p>
+                                </div>
+                            </div>
+
+                            <div
+                                style="margin-top: 10px; padding: 30px; background: #111827; border-radius: 20px; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+                                <div>
+                                    <p
+                                        style="font-size: 0.75rem; color: #E11D48; font-weight: 800; margin-bottom: 5px; text-transform: uppercase;">
+                                        Más Directo</p>
+                                    <p style="margin: 0; font-family: var(--font-heading); font-size: 1.4rem;">¿Tienes
+                                        una urgencia?</p>
+                                </div>
+                                <a href="https://wa.me/18293424131?text=Hola,%20me%20gustaría%20agendar" target="_blank"
+                                    style="background: #E11D48; color: white; border-radius: 50%; min-width: 55px; height: 55px; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 1.5rem;">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -126,19 +168,48 @@
                 <h3 class="footer__logo">Expresarte.</h3>
                 <p>El arte de vivir.</p>
             </div>
-            <div class="footer__nav">
-                <a href="index.html">Inicio</a>
-                <a href="index.html#servicios">Servicios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
             <div class="footer__copy">
                 <p>&copy; 2026 Gerlen Elivet Aquino Zorrilla. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Script -->
     <script src="./js/menu.js"></script>
+    <script>
+        const form = document.getElementById('formContacto');
+        const btn = document.getElementById('btnEnviar');
+        const successMsg = document.getElementById('mensajeExito');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            btn.innerText = "Enviando...";
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: json
+            })
+                .then(async (response) => {
+                    if (response.status == 200) {
+                        form.style.display = 'none';
+                        successMsg.style.display = 'block';
+                    } else {
+                        alert("Algo salió mal. Inténtalo de nuevo.");
+                        btn.innerText = "Enviar Mensaje →";
+                        btn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    alert("Error de conexión.");
+                    btn.disabled = false;
+                });
+        });
+    </script>
 </body>
 
 </html>
