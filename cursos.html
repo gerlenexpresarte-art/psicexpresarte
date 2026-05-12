@@ -50,7 +50,7 @@
                 <p style="font-size: 1.25rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 650px; margin-left: auto; margin-right: auto;">
                     Te invitamos a darle voz a lo que sientes. Transforma el silencio y la carga emocional en conciencia, sanidad y absoluta libertad interior.
                 </p>
-                <a href="#lista-espera" style="display: inline-block; padding: 20px 50px; background: #111827; color: white; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; border-radius: 50px; font-size: 0.95rem; transition: transform 0.3s; box-shadow: 0 15px 30px rgba(17,24,39,0.2);">
+                <a href="#lista-espera" style="display: inline-block; padding: 20px 50px; background: #111827; color: white; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; border-radius: 50px; font-size: 0.95rem; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 15px 30px rgba(17,24,39,0.2);">
                     Inscribirme a la lista VIP
                 </a>
             </div>
@@ -59,7 +59,7 @@
         <section style="background: var(--color-bg-sand); padding-bottom: 100px;">
             <div class="container">
                 <div style="position: relative; width: 100%; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.15); transform: translateY(-40px);">
-                    <img src="./images/curso.jpg" alt="El arte de sanar" style="width: 100%; height: 60vh; min-height: 450px; object-fit: cover; object-position: 50% 30%; display: block;">
+                    <img src="./images/curso.jpg" alt="El arte de sanar" style="width: 100%; height: 60vh; min-height: 450px; object-fit: cover; object-position: 50% 30%; display: block; filter: brightness(0.9);">
                 </div>
             </div>
         </section>
@@ -82,30 +82,30 @@
 
                     <div style="flex: 1 1 450px; position: relative;">
                         <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 50px 40px; border-radius: 40px; backdrop-filter: blur(20px); box-shadow: 0 40px 80px rgba(0,0,0,0.4);">
-                            
-                            <form id="formularioVip" action="https://formsubmit.co/ajax/gerlenexpresarte@gmail.com" method="POST">
-                                <input type="hidden" name="_subject" value="Nueva Inscripción VIP - Curso Expresarte">
+                            <h3 style="font-size: 1.8rem; font-family: var(--font-heading); color: white; margin-bottom: 35px; text-align: center;">Reserva tu lugar</h3>
+
+                            <form id="formVipDefinitivo" action="https://formsubmit.co/ajax/gerlenexpresarte@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="Nueva Inscripción VIP Curso">
                                 <input type="hidden" name="_captcha" value="false">
-                                
+
                                 <div style="margin-bottom: 25px;">
                                     <label style="display: block; font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px;">Nombre Completo</label>
-                                    <input type="text" name="Nombre" placeholder="Tu nombre" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none;">
+                                    <input type="text" name="Nombre" placeholder="Tu nombre" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none; transition: 0.3s;">
                                 </div>
 
                                 <div style="margin-bottom: 30px;">
                                     <label style="display: block; font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px;">Correo Electrónico</label>
-                                    <input type="email" name="Email" placeholder="tu@correo.com" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none;">
+                                    <input type="email" name="Email" placeholder="tu@correo.com" required style="width: 100%; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; background: rgba(0,0,0,0.2); color: white; outline: none; transition: 0.3s;">
                                 </div>
 
-                                <button type="submit" id="botonEnviar" style="width: 100%; padding: 22px; background: white; color: #111827; border: none; border-radius: 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; cursor: pointer; transition: 0.3s;">
+                                <button type="submit" id="btnEnviarVip" style="width: 100%; padding: 22px; background: white; color: #111827; border: none; border-radius: 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s;">
                                     Anotarme a la lista
                                 </button>
 
-                                <div id="mensajeExito" style="display:none; text-align:center; margin-top: 20px; padding: 15px; background: rgba(76, 175, 80, 0.2); color: #81C784; border-radius: 10px; border: 1px solid #4CAF50;">
-                                    ¡Registro exitoso! Te avisaremos pronto.
+                                <div id="mensajeConfirmacion" style="display:none; text-align:center; padding: 20px; background: rgba(253,164,175,0.1); border: 1px solid #FDA4AF; border-radius: 15px; margin-top: 20px;">
+                                    <p style="color: #FDA4AF; font-weight: bold; margin: 0;">¡Registro exitoso! Te avisaremos pronto.</p>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -128,33 +128,45 @@
     <script src="./js/menu.js"></script>
 
     <script>
-        const form = document.getElementById('formularioVip');
-        const btn = document.getElementById('botonEnviar');
-        const msg = document.getElementById('mensajeExito');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+        // SCRIPT ANTI-REDIRECCIÓN (AJAX)
+        document.getElementById('formVipDefinitivo').onsubmit = function(e) {
+            e.preventDefault(); // BLOQUEA LA PANTALLA DE GRACIAS
+            
+            var form = e.target;
+            var btn = document.getElementById('btnEnviarVip');
+            var msg = document.getElementById('mensajeConfirmacion');
+            
             btn.innerText = "Enviando...";
-            btn.style.opacity = "0.5";
             btn.disabled = true;
+            btn.style.opacity = "0.5";
 
+            var data = new FormData(form);
+            
             fetch(form.action, {
                 method: 'POST',
-                body: new FormData(form),
+                body: data,
                 headers: { 'Accept': 'application/json' }
             })
-            .then(response => {
-                btn.style.display = "none";
-                msg.style.display = "block";
-                form.reset();
+            .then(function(response) {
+                if (response.ok) {
+                    form.reset();
+                    btn.style.display = "none"; // Oculta el botón
+                    msg.style.display = "block"; // Muestra mensaje de éxito
+                } else {
+                    alert("Error al enviar. Inténtalo de nuevo.");
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                    btn.innerText = "Anotarme a la lista";
+                }
             })
-            .catch(error => {
-                alert("Hubo un error al enviar. Inténtalo de nuevo.");
+            .catch(function(error) {
+                alert("Error de conexión.");
                 btn.disabled = false;
                 btn.style.opacity = "1";
-                btn.innerText = "Anotarme a la lista";
             });
-        });
+
+            return false; 
+        };
     </script>
 </body>
 </html>
